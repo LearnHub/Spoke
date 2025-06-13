@@ -27,7 +27,7 @@ export default class ModelNode extends EditorNodeMixin(Model) {
 
   static initialElementProps = {
     initialScale: "fit",
-    src: "https://avnfs.com/Zb-Tj1TWBz5hnnbgB4ILv5gM3D3A2uwNlIMP_ErlSrU?size=120484&type=model%2Fgltf-binary&name=duck-khronos.glb"
+    src: "https://avnfs.com/OKUrfUR-tHAEnUoEyDipKpHTXVuMee3One8PqFMb_d8?size=119872&type=model%2Fgltf-binary&name=PngDuck.glb"
   };
 
   static async deserialize(editor, json, loadAsync, onError) {
