@@ -10,7 +10,7 @@ export default class ImageNode extends EditorNodeMixin(Image) {
   static nodeName = "Image";
 
   static initialElementProps = {
-    src: new URL(spokeLogoSrc, location).href
+    src: "https://avnfs.com/SFpS7q4yjxMNCIIv3fB2QKgNto7spzlRs5n6fZ3S7wg?size=10658&type=image%2Fpng"
   };
 
   static async deserialize(editor, json, loadAsync, onError) {

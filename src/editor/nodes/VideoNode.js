@@ -13,7 +13,7 @@ export default class VideoNode extends AudioParamsNode(Video) {
   static nodeName = "Video";
 
   static initialElementProps = {
-    src: new URL(spokeLandingVideo, location).href
+    src: "https://avnfs.com/CwarJ3uZQ8StUb-S6uhykcdpwpVWXhlUSxDtegHuDlo?size=5067126&type=video%2Fmp4&name=eduverse.mp4"
   };
 
   static async deserialize(editor, json, loadAsync, onError) {

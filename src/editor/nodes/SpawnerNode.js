@@ -26,7 +26,7 @@ export default class SpawnerNode extends EditorNodeMixin(Model) {
 
   static initialElementProps = {
     initialScale: "fit",
-    src: "https://sketchfab.com/models/a4c500d7358a4a199b6a5cd35f416466"
+    src: "https://avnfs.com/Zb-Tj1TWBz5hnnbgB4ILv5gM3D3A2uwNlIMP_ErlSrU?size=120484&type=model%2Fgltf-binary&name=duck-khronos.glb"
   };
 
   static async deserialize(editor, json, loadAsync, onError) {
