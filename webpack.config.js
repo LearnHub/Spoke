@@ -137,6 +137,16 @@ module.exports = env => {
           }
         },
         {
+          test: /\.(gltf)(\?.*$|$)/,
+          use: {
+            loader: "gltf-webpack-loader",
+            options: {
+              name: "[name]-[hash].[ext]",
+              outputPath: "assets/models"
+            }
+          }
+        },
+        {
           test: /\.(bin)$/,
           use: [
             {
