@@ -44,6 +44,8 @@ if (configs.CORS_PROXY_SERVER) {
 }
 
 function shouldCorsProxy(url) {
+  // AVN_NO_PROXY: Proxied content is not supported for simplicity, security, and reduced server load
+  return false
   // Skip known domains that do not require CORS proxying.
   try {
     const parsedUrl = new URL(url);
@@ -56,6 +58,8 @@ function shouldCorsProxy(url) {
 }
 
 export const proxiedUrlFor = url => {
+  // AVN_NO_PROXY: Proxied content is not supported for simplicity, security, and reduced server load
+  return url;
   if (!(url.startsWith("http:") || url.startsWith("https:"))) return url;
 
   if (!shouldCorsProxy(url)) {
